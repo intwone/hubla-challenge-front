@@ -15,6 +15,7 @@ export const TransactionInfoContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  color: ${theme.colors.gray[700]};
 
   p {
     font-weight: 100;

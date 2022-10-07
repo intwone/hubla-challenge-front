@@ -2,6 +2,7 @@ import { NoContent } from '@src/components/NoContent';
 import { TransactionCard } from '@src/components/TransactionCard';
 import { TransactionProtocol } from '@src/components/TransactionCard/types';
 import { TypeEnum } from '@src/enums/type-enum';
+import { formatToBRLCurrency } from '@src/helpers/formatters';
 import { MainLayoult } from '@src/layouts/MainLayout';
 import { listTransactionsByTypeRequest } from '@src/services/list-transations-by-type-request';
 import { listTransactionsRequest } from '@src/services/list-transations-request';
@@ -14,6 +15,10 @@ import { Container, TransactionInfoContainer } from './style';
 export function TransactionPage() {
   const [transactions, setTransactions] = useState<TransactionProtocol[]>([]);
   const [type, setType] = useState(0);
+
+  const totalValue = formatToBRLCurrency(
+    transactions.reduce((sum, transaction) => sum + transaction.value, 0),
+  );
 
   async function sendRequest() {
     if (!type) {
@@ -31,7 +36,8 @@ export function TransactionPage() {
     <MainLayoult>
       <TransactionInfoContainer>
         <p>
-          <strong>{transactions.length}</strong> Registros
+          Valor total das transações:{' '}
+          <strong>{transactions.length ? totalValue : 0}</strong>
         </p>
         <Dropdown
           onChange={async e => {
@@ -48,6 +54,7 @@ export function TransactionPage() {
           placeholder="Selecione o tipo de transação"
         />
       </TransactionInfoContainer>
+
       <Scrollbars style={{ height: '80vh' }}>
         {transactions.length ? (
           <Container>
