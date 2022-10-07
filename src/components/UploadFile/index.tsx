@@ -51,7 +51,7 @@ export function UploadFile() {
     try {
       if (!file) return;
       await insertTransactionsFileRequest(file);
-      toast.success('Transações salvas com sucess.');
+      toast.success('Transações salvas com sucesso.');
       setFile(null);
     } catch {
       toast.error('Ocorreu um erro ao salvar o arquivo.');
@@ -75,7 +75,7 @@ export function UploadFile() {
             isDragActive={isDragActive}
             isDragReject={isDragReject}
           >
-            <input {...getInputProps()} />
+            <input data-testid="upload-file" {...getInputProps()} />
             <IoMdCloudUpload size={70} color={iconColor()} />
             <DropzoneContentMessage
               isDragActive={isDragActive}
@@ -94,7 +94,7 @@ export function UploadFile() {
         )}
 
         <Footer disabled={isSubmitting || !file}>
-          <button type="submit">
+          <button data-testid="send-file" type="submit">
             {isSubmitting ? (
               <ReactLoading type="spin" height={20} width={20} />
             ) : (
