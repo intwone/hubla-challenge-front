@@ -22,7 +22,7 @@ export function Header() {
               ? theme.colors.main
               : theme.colors.gray[700],
           }}
-          to="/upload"
+          to="/"
         >
           Upload
         </Link>
