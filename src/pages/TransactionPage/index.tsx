@@ -17,15 +17,10 @@ export function TransactionPage() {
 
   async function sendRequest() {
     if (!type) {
-      listTransactionsRequest().then(transactions =>
-        setTransactions(transactions),
-      );
+      listTransactionsRequest().then(t => setTransactions(t));
       return;
     }
-
-    listTransactionsByTypeRequest(type).then(transactions =>
-      setTransactions(transactions),
-    );
+    listTransactionsByTypeRequest(type).then(t => setTransactions(t));
   }
 
   useEffect(() => {

@@ -21,7 +21,6 @@ import { FilePropsProtocol } from './types';
 
 export function UploadFile() {
   const [file, setFile] = useState<FilePropsProtocol | File | null>(null);
-  console.log(file);
 
   const {
     handleSubmit,
@@ -89,13 +88,13 @@ export function UploadFile() {
           <FileUploadedContainer>
             <FileUploaded name={file.name} size={file.size} />
             <RemoveTransactionContainer onClick={() => setFile(null)}>
-              <button>Excluir</button>
+              <button type="submit">Excluir</button>
             </RemoveTransactionContainer>
           </FileUploadedContainer>
         )}
 
         <Footer disabled={isSubmitting || !file}>
-          <button>
+          <button type="submit">
             {isSubmitting ? (
               <ReactLoading type="spin" height={20} width={20} />
             ) : (

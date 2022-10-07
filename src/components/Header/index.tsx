@@ -8,37 +8,35 @@ export function Header() {
   const isSelectedTransactionsPage = pathname.includes('transactions');
 
   return (
-    <>
-      <Container>
-        <div>
-          <h1>
-            HUBLA <span>&bull;</span>
-          </h1>
-        </div>
+    <Container>
+      <div>
+        <h1>
+          HUBLA <span>&bull;</span>
+        </h1>
+      </div>
 
-        <Topics>
-          <Link
-            style={{
-              color: isSelectedUploadPage
-                ? theme.colors.main
-                : theme.colors.gray[700],
-            }}
-            to="/upload"
-          >
-            Upload
-          </Link>
-          <Link
-            style={{
-              color: isSelectedTransactionsPage
-                ? theme.colors.main
-                : theme.colors.gray[700],
-            }}
-            to="/transactions"
-          >
-            Transações
-          </Link>
-        </Topics>
-      </Container>
-    </>
+      <Topics>
+        <Link
+          style={{
+            color: isSelectedUploadPage
+              ? theme.colors.main
+              : theme.colors.gray[700],
+          }}
+          to="/upload"
+        >
+          Upload
+        </Link>
+        <Link
+          style={{
+            color: isSelectedTransactionsPage
+              ? theme.colors.main
+              : theme.colors.gray[700],
+          }}
+          to="/transactions"
+        >
+          Transações
+        </Link>
+      </Topics>
+    </Container>
   );
 }
