@@ -1,7 +1,7 @@
 import { Header } from '@src/components/Header';
-import { MainLayoutProps } from './types';
+import { MainLayoutPropsProtocol } from './types';
 
-export function MainLayoult({ children }: MainLayoutProps) {
+export function MainLayoult({ children }: MainLayoutPropsProtocol) {
   return (
     <>
       <Header />

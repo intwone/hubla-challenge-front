@@ -1,8 +1,8 @@
-import { FileProps } from '../components/UploadFile/types';
+import { FilePropsProtocol } from '../components/UploadFile/types';
 import axiosClient from './axios-client';
 
 export async function insertTransactionsFileRequest(
-  file: FileProps,
+  file: FilePropsProtocol,
 ): Promise<void> {
   const data = new FormData();
   const fileTyped = file as File;

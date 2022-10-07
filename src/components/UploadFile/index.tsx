@@ -17,10 +17,10 @@ import {
   RemoveTransactionContainer,
   TitleContainer,
 } from './style';
-import { FileProps } from './types';
+import { FilePropsProtocol } from './types';
 
 export function UploadFile() {
-  const [file, setFile] = useState<FileProps | File | null>(null);
+  const [file, setFile] = useState<FilePropsProtocol | File | null>(null);
   console.log(file);
 
   const {

@@ -1,11 +1,11 @@
 import { Paragraph } from '../UploadFile/style';
 import { Container } from './style';
-import DropzoneContentMessageProps from './types';
+import { DropzoneContentMessagePropsProtocol } from './types';
 
 export function DropzoneContentMessage({
   isDragActive,
   isDragReject,
-}: DropzoneContentMessageProps) {
+}: DropzoneContentMessagePropsProtocol) {
   if (!isDragActive) {
     return (
       <Container>

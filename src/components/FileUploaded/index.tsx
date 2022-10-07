@@ -1,8 +1,8 @@
 import { AiOutlineFileText } from 'react-icons/ai';
-import { FileProps } from '../UploadFile/types';
+import { FilePropsProtocol } from '../UploadFile/types';
 import { Container, FileInfo } from './style';
 
-export function FileUploaded({ name, size }: FileProps) {
+export function FileUploaded({ name, size }: FilePropsProtocol) {
   const fileSizeInKiloBytes = `${size / 1000}kb`;
 
   return (

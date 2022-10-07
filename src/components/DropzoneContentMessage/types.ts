@@ -1,4 +1,4 @@
-export default interface DropzoneContentMessageProps {
+export interface DropzoneContentMessagePropsProtocol {
   isDragActive: boolean;
   isDragReject: boolean;
 }
