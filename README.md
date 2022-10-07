@@ -6,7 +6,7 @@
 
 ## 🏃 Como executar o projeto
 
-Primeiramente, renomeie o arquivo `.env.example` para `.env` adicionando as variáveis de ambiente.
+Primeiramente, renomeie o arquivo `.env.example` para `.env`.
 
 Instalando as dependências:
 
