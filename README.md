@@ -7,6 +7,7 @@
 ## 🏃 Como executar o projeto
 
 Primeiramente, renomeie o arquivo `.env.example` para `.env`.
+Em seguida, certifique que está com a aplicação backend executando, assim será possível interagir com o frontend enviar arquivos e listando informações.
 
 Instalando as dependências:
 
@@ -22,13 +23,15 @@ $ npm run start:dev
 
 ## Testes
 
-Executando os testes no modo interativo
+Obs: Certifique que está com a aplicação rodando para que possa ser executado os testes.
+
+Executando os testes no modo interativo:
 
 ```bash
 $ npm run cypress:open
 ```
 
-Executando os testes no modo headless
+Executando os testes no modo headless:
 
 ```bash
 $ npm run cypress:run
