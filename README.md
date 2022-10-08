@@ -4,10 +4,10 @@
     Desafio técnico desenvolvido para o processo seletivo da empresa Hubla.
 </h1>
 
-## 🏃 Como executar o projeto
+## Como executar o projeto
 
 Primeiramente, renomeie o arquivo `.env.example` para `.env`.
-Em seguida, certifique que está com a aplicação backend executando, assim será possível interagir com o frontend enviar arquivos e listando informações.
+Em seguida, certifique que está com a aplicação backend executando, assim será possível interagir com o frontend enviando arquivos e listando informações.
 
 Instalando as dependências:
 
