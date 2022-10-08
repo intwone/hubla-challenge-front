@@ -20,6 +20,24 @@ Iniciando o projeto:
 $ npm run start:dev
 ```
 
+## Testes
+
+Executando os testes no modo interativo
+
+```bash
+$ npm run cypress:open
+```
+
+Executando os testes no modo headless
+
+```bash
+$ npm run cypress:run
+```
+
+## Layout do projeto
+
+Figma: https://www.figma.com/file/jl1S99ipTVdCuXauPOMrwo/Hubla?node-id=0%3A1
+
 ## Funcionalidades
 
 - Upload de arquivo
