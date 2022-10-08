@@ -23,7 +23,7 @@ export function TransactionCard({
   };
 
   return (
-    <Container>
+    <Container data-testid="transaction-item">
       <Details>
         <p className="product-name">{productName}</p>
         <h4>
