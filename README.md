@@ -6,7 +6,7 @@
 
 ## Como executar o projeto
 
-Primeiramente, renomeie o arquivo `.env.example` para `.env`.
+Primeiramente, criar um arquivo `.env` baseado no arquivo `.env.example`.
 Em seguida, certifique que está com a aplicação backend executando, assim será possível interagir com o frontend enviando arquivos e listando informações.
 
 Instalando as dependências:
@@ -64,7 +64,7 @@ src
 ├───enums
 ├───helpers
 ├───layout
-│   └────DropzoneContentMessage
+│   └────MainLayout
 ├───pages
 │   ├───TransactionPage
 │   └───UploadPage
