@@ -4,6 +4,13 @@
     Desafio técnico desenvolvido para o processo seletivo da empresa Hubla.
 </h1>
 
+<div align="center">
+<a href="https://ibb.co/XxTSPtD"><img src="https://i.ibb.co/zVwGgZF/demo2.png" alt="demo2" border="0"></a>
+
+<a href="https://ibb.co/7y1xjzf"><img src="https://i.ibb.co/pXL6bP7/demo1.png" alt="demo1" border="0"></a>
+
+</div>
+
 ## Como executar o projeto
 
 Primeiramente, criar um arquivo `.env` baseado no arquivo `.env.example`.
