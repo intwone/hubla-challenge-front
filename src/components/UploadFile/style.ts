@@ -3,8 +3,7 @@ import { transparentize } from 'polished';
 import styled, { css } from 'styled-components';
 
 export const Container = styled.div`
-  width: 100%;
-  height: 70vh;
+  width: 500px;
   max-width: 550px;
   border: 1px solid ${theme.colors.gray[600]};
   border-radius: 15px;
@@ -12,7 +11,6 @@ export const Container = styled.div`
 
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 
   .info-message {
     color: ${theme.colors.gray[800]};
@@ -75,6 +73,7 @@ export const Paragraph = styled.p`
 export const Footer = styled.div<{ disabled: boolean }>`
   display: flex;
   justify-content: end;
+  margin-top: 20px;
 
   button {
     display: flex;

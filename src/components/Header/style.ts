@@ -7,6 +7,7 @@ export const Container = styled.header`
   justify-content: space-between;
   padding: 15px 120px;
   align-items: center;
+  margin-bottom: 50px;
 
   h1 {
     font-weight: bold;
